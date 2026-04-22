@@ -1,0 +1,27 @@
+name: DevX Metrics Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Stage
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build stage - no actual build"
+
+  test:
+    name: Test Stage
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Test stage - no actual test"
+
+  deploy:
+    name: Deploy Stage
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - run: echo "Deploy stage - no actual deployment"
