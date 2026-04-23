@@ -1,0 +1,11 @@
+name: Devx
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "GitHub Actions works from Devx"
+      - run: echo "checking if it can be modified via devx"
